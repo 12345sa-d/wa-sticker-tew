@@ -1,0 +1,59 @@
+{
+  "name": "wa-sticker-tew",
+  "version": "2.3.6",
+  "description": "",
+  "main": "lib",
+  "types": "lib",
+  "files": [
+    "lib",
+    "bin",
+    "test"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "doc": "npx typedoc src/**/*.ts",
+    "lint": "eslint \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "test": "node --trace-warnings ./test"
+  },
+  "keywords": [
+    "whatsapp",
+    "stickers",
+    "whatsapp-stickers",
+    "webp"
+  ],
+  "author": {
+    "name": "TewChaynz",
+    "email": "TewChaynzDev@gmail.com",
+    "url": "https://github.com/Tew-Chaynz"
+  },
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/Tew-Chaynz/wa-sticker-tew"
+  },
+  "issues": "https://github.com/Tew-Chaynz/wa-sticker-tew",
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.16",
+    "@types/fs-extra": "^9.0.8",
+    "@types/node": "^14.14.37",
+    "@types/qr-image": "^3.2.3",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0",
+    "prettier": "^2.2.1",
+    "typedoc": "^0.20.32",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "file-type": "^16.3.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^9.1.0",
+    "gif-frames": "^1.0.1",
+    "image-size": "^0.9.7",
+    "jimp": "^0.16.1",
+    "mimetypes": "^0.1.1",
+    "streamifier": "^0.1.1"
+  }
+}
